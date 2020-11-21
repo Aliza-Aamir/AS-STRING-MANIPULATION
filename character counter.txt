@@ -1,0 +1,9 @@
+Declare userinput : String
+Declare x : integer
+
+Print 'Please input a string of characters and this algorithm will count it.'
+input userinput
+ 
+x ← LEN(userinput)
+Print 'The number of entered characters including spaces is:, x'
+Print x
