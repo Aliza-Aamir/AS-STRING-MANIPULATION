@@ -9,7 +9,7 @@ Print 'Please enter a string:'
 input str1
 Print 'Enter teh character you wish to remove:'
 input chr1
-Print 'Enter the character you wish to put in place of teh one removed:'
+Print 'Enter the character you wish to put in place of the one removed:'
 input chr2
 FOR count 1 TO len(str1)
         nextchar = mid(str1, counter, 1)
