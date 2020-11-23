@@ -1,0 +1,19 @@
+Declare donuts : integers
+Declare x : integer
+
+donuts ← 0
+
+Print 'The purpose of this algorithm is to determine teh number of donuts.'
+input donuts
+
+If donuts <= 10 
+Then
+   x ← donuts
+   Print 'Number of donuts:' , x 'where' , x 'is the number.'
+
+ElseIf donuts >= 10 
+Then 
+ x ← donuts
+ Print 'Number of donuts is many.'
+
+EndiF
