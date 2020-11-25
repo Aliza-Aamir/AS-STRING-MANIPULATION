@@ -1,0 +1,17 @@
+Declare userinput, mychar : string
+Declare counter, vcount : integer
+ Declare vowels : string = 'Aa Ee Ii Oo Uu'
+
+INPUT userinput
+FOR Counter = 1 to LENGTH(userinput)
+    mychar = MID(userinput, Counter, 1)
+
+    IF LOCATE(vowels, mychar) > 0
+   THEN 
+            vcount = vcount + 1
+EXIT FOR
+END IF
+    
+NEXT counter
+Print "Total number of vowels = ", vcount
+ 
