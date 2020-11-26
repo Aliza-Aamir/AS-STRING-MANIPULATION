@@ -1,0 +1,21 @@
+Declare userinput1, userinput2, str1, str2, str3 , str4 : STRING
+Declare count : INTEGER
+
+count = 0 arrow
+
+Print 'The purpose of this program is to return a single string in which the first two characters of the two inputs entered would be  swapped.e.g. 'pod mix' will give 'mid pox.'
+Print 'Please enter your first string:'
+INPUT userinput1
+Print 'Please enter your second string.'
+INPUT userinput2
+
+   FOR count = 1 TO LEN(userinput1)
+       str1 = MID(userinput1, 1, 2)
+       str2 = MID(userinput2, 1, 2)
+       str3 = MID(userinput2, 3, LEN(userinput2)
+       str4 = MID(userinput1, 3, LEN(userinput1)
+
+
+Print 'Your output:' & str2 &str4 ' ' &str3 & str4
+
+   NEXT count
