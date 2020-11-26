@@ -1,0 +1,20 @@
+Declare userinput, str1, str2: string
+Declare count : integer
+ 
+count ← 0
+        Print 'The purpose of this program is to return a string composed of the first and last 2 characters of the orginal string.'
+INPUT userinput
+         IF LEN(userinput) > 2 
+       THEN 
+        FOR count ← 1 to LEN(userinput)
+         str1 ← MID(userinput, 1, 2)
+         str2 ← RIGHT(userinput, 2)
+        
+          Print 'Your output is' & str1 & str2
+ELSEIF    LEN(userninput) <= 2
+        THEN
+        Print userinput'
+
+NEXT count
+     
+
