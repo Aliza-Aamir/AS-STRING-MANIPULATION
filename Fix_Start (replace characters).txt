@@ -1,0 +1,21 @@
+
+Declare userinput : char
+Declare firstchar, mychar : char
+
+Print 'The program outputs all the occurrences of its first char being changed to '*', except the first char itself.'
+Print  'Enter a statement.'
+
+INPUT userinput
+
+firstchar ← LEFT(userinput,1)
+Print firstchar
+
+FOR count ← 1 TO LEN(userinput)
+    mychar ← MID(userinput, (count + 1), 1)
+    IF mychar ← firstchar
+   THEN
+    mychar ← '*'
+     ENDIF
+ Print mychar
+
+NEXT count    
