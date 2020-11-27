@@ -1,14 +1,13 @@
 Declare userinput, final string : String
 Feclare count : Integer
 
-finalstring = 0
 
 Print 'This program changes the words: 'not bad' within your entered string with 'good'.'
 Print 'Please enter your input:'
 INPUT userinput
 
-FOR count = 1 TO LEN(userinput)
-    finalstring = userinput.replace('not bad' , 'good')
+FOR count ← 1 TO LEN(userinput)
+    finalstring ← userinput.replace('not bad' , 'good')
    
 Print 'Your output is:' & finalstring'
    NEXT count
