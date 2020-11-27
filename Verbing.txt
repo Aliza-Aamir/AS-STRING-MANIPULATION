@@ -1,0 +1,27 @@
+Declare userinput : string
+Declare count : integer
+Declare inPresent : Boolean
+
+count = 0
+
+Print 'The purpose of this program is to take userinput greater than 3 characters and adding '-ing' to it. However, if the userinput already has '-ing' in it then the program will add '-ly' to it.'
+Print 'Please enter your character:'
+INPUT userinput
+
+IF LEN(userinput) < 3
+THEN 
+  Print userinput
+
+ELSEIF LEN(userinput) > 3
+THEN
+    IF userinput.contains('ing')
+       THEN 
+     isPresent = TRUE
+     Print userinput & 'ly'
+
+    ELSE
+      isPresent = FALSE
+      Print userinput & 'ing'
+
+ENDIF
+ENDIF
