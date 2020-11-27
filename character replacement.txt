@@ -2,7 +2,7 @@ Declare str1, str2 : string
 Declare chr, chr2 : string
 Declare nextchar : string
 Declare count : integer
-count = 0
+count ← 0
 
 Print 'The purpose of this program is to replace a certain character from a string and replace it with another.'
 Print 'Please enter a string:'
@@ -12,12 +12,12 @@ input chr1
 Print 'Enter the character you wish to put in place of the one removed:'
 input chr2
 FOR count 1 TO len(str1)
-        nextchar = mid(str1, counter, 1)
-  IF nextxhar = chr1
+        nextchar ← mid(str1, counter, 1)
+  IF nextxhar ← chr1
     THEN 
-     nextchar = 2 
+     nextchar ← 2 
            ENDIF
- str2 = str2 & nextchar
+ str2 ← str2 & nextchar
 Print 'Final string is:, str2'
 Print str2
  Next count
