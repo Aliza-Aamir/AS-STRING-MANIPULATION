@@ -2,29 +2,29 @@ Declare myChar, thisChar, nextChar : CHAR
 Declare freq_num, count , x, y : Integer
 Declare userinput : string
 
-freq_num = 0
-count = 0
-myChar = ''
+freq_num ← 0
+count← 0
+myChar ← ''
 
 Print 'The purpose of this program is to count the frequently occurring  characters in an entered sentence.'
 Print 'Please enter your sentence:'
  
 INPUT userinput
 
-FOR x = 1 TO LEN(userinput)
- nextchar = MID(userinput, x, 1)
- count = count + 0
+FOR x ← 1 TO LEN(userinput)
+ nextchar ← MID(userinput, x, 1)
+ count ← count + 0
  
    EXITFOR
-FOR y = 1  TO LEN(userinput)
-   thisChar = MID(userinput, y, 1)
-  IF thisChar = nextChar THEN
-   count = count + 1
+FOR y ← 1  TO LEN(userinput)
+   thisChar ← MID(userinput, y, 1)
+  IF thisChar ← nextChar THEN
+   count ← count + 1
 NEXT y
 
 IF count > freq_num THEN
-    freq_num = count
-    mychar = nextchar
+    freq_num ← count
+    mychar ← nextchar
 ENDIF
 
 NEXT x
