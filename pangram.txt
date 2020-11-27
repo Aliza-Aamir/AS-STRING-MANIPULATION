@@ -4,23 +4,23 @@ Declare count : integer
 Decalre ispangram : boolean
 
 alphabets ← 'abcdefghijklmnopqrstuvwxyz'
-count = 0
-ispangram = true
+count ← 0
+ispangram ← true
 
 Print 'The purpose of this program is to check whether or not your sentence is a pangram. i.e whether it has all the alphabets.')
 Print 'Enter your sentence:'
 input userinput
 
-For Count = 1 to LENGTH(alphabets)
-    nextChar = MID(alphabets, Count, 1)
+For Count ← 1 to LENGTH(alphabets)
+    nextChar ← MID(alphabets, Count, 1)
     IF LOCATE(LOWER(userinput), nextChar) = 0
       THEN
-        isPangram = FALSE
+        isPangram ← FALSE
         EXIT FOR
     END IF
 END FOR
 
-IF isPangram = TRUE
+IF isPangram ← TRUE
   THEN
     OUTPUT "Your sentence contains all of the alphabets, therefore it is a pangram."
   ELSE
