@@ -1,14 +1,14 @@
 Declare userinput, mychar : string
 Declare counter, vcount : integer
- Declare vowels : string = 'Aa Ee Ii Oo Uu'
+ Declare vowels : string ← 'Aa Ee Ii Oo Uu'
 
 INPUT userinput
-FOR Counter = 1 to LENGTH(userinput)
-    mychar = MID(userinput, Counter, 1)
+FOR Counter ← 1 to LENGTH(userinput)
+    mychar ← MID(userinput, Counter, 1)
 
     IF LOCATE(vowels, mychar) > 0
    THEN 
-            vcount = vcount + 1
+            vcount ← vcount + 1
 EXIT FOR
 END IF
     
