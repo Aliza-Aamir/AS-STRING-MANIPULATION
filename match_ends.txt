@@ -2,21 +2,21 @@ Declare data, entereddata : String
 Declare firstchar, lastchar : Char
 Dim counter : integer
 
-counter = 0
-data= 'ABCDEFGHIJKLMNOPQRST'
+counter ← 0
+data ← 'ABCDEFGHIJKLMNOPQRST'
 
 Print 'The data: ABCDEFGHIJKLMNOPQRST.'
 Print 'Enter data:'
 INPUT entereddata
 
-FOR counter = 0 TO LEN(entereddata)
+FOR counter ← 0 TO LEN(entereddata)
     IF LEN(entereddata) >= 2
     THEN 
-      firstchar = MID(entereddata, 1,1)
-      lastchar= LAST(entereddata,1)
+      firstchar ← MID(entereddata, 1,1)
+      lastchar ← LAST(entereddata,1)
      IF firstchar =lastchar 
     THEN
-       counter =counter + 1
+       counter ← counter + 1
     ENDIF
      Print counter & firstchar
 ELSE 
